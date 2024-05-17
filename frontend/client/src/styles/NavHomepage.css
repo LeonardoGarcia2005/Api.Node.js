@@ -1,0 +1,253 @@
+/* ---------------------------------------Inicio de los estilos de Navbar------------------------------------- */
+nav.navbar {
+    min-height: 10vh;
+  }
+
+h3.navbar-brand {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+.bible-icon {
+   margin: 0 0 0 16px;
+   transition: all 0.5s;
+   font-size: 40px !important;
+}
+.bible-icon:hover {
+  color:rgba(0, 119, 231, 0.616) !important;
+  transform: scale(1.2);
+}
+
+.menu-icon{
+  font-size: 40px !important;
+  transition: all 0.5s;
+}
+
+.menu-icon:hover{
+  color:rgba(0, 119, 231, 0.616) !important;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.title { /* hace los titulos con colores gradientes y es utilizado en varios componentes */
+  user-select: none;
+  background: linear-gradient(45deg,rgba(0,165,231,1),#ff00e2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/* responsividad del navbar */
+@media screen and (max-width: 1500px){
+  .title{
+  font-size: 35px !important;
+  }
+ }
+
+ @media screen and (max-width: 600px){
+  .title{
+  font-size: 28px !important;
+  }
+  .bible-icon {
+    font-size: 35px !important;
+}
+.menu-icon{
+    font-size: 35px !important;
+}
+ }
+@media screen and (max-width: 440px){
+  .title{
+      font-size: 25px !important;
+  }
+  .bible-icon {
+      font-size: 32px !important;
+  }
+  .menu-icon{
+      font-size: 32px !important;
+  }
+  .display-cross{ /* usado también en inicialBible */
+    display: none;
+  }
+}
+@media screen and (max-width: 380px){
+  .title{
+      font-size: 24px !important;
+    }
+}
+
+@media screen and (max-width: 340px){
+  .title{
+      font-size: 20px !important;
+    }
+}
+/* --------------------------- */
+
+/* ------Inicio de los estilos del menu offcanvas------ */
+
+/* foto de perfil y nombre */
+.img-size{
+  height: 100px;
+  width: 120px;
+}
+.profile-name{
+  background: linear-gradient(45deg,rgba(0,165,231,1),#ff00e2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+}
+/* ------------------------ */
+
+/* ------Estilos generales para la lista del menú------- */
+.list-group-item {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 0;
+}
+
+.list-group-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg,rgba(0,165,231,1),#ff00e2);
+  border-radius: 1px;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out; /* La duración y el tipo de animación que quieras */
+}
+
+.list-group-item:hover::before,
+.list-group-item:focus::before {
+  transform: scale(1);
+}
+/*  --------Final de los estilos de la lista del menú--------- */
+
+/* ------Inicio de responsividad de menú------ */
+.offcanvas {
+  --bs-offcanvas-width: 400px !important;
+}
+
+@media screen and (max-width: 1000px){
+  .offcanvas{
+  --bs-offcanvas-width: 350px !important;
+  }
+}
+.font-section{
+  font-size: 25px ;
+}
+
+@media screen and (max-width: 450px){
+  .offcanvas{
+    --bs-offcanvas-width: 250px !important;
+  }
+  .font-section{
+    font-size: 20px;
+  }
+  
+}
+/* ----Final de responsividad de menú---- */
+
+/* -----------------------------------------Final de los estilos de Navbar----------------------------------------- */
+
+/* -----------------------------Inicio de los estilos del componente Homepage*------------------------------------- */
+
+.card-section { 
+  transition: transform 0.5s;
+}
+.card-section:hover { 
+  filter: brightness(110%); 
+  transform: translateY(-4px);
+}
+
+.week-number{
+  user-select: none;
+  background: linear-gradient(45deg,rgba(0,165,231,1),#ff00e2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.animation-streak{
+  animation: move-up-down 2s ease-in-out infinite alternate;
+}
+
+/* Animacion que hace subir y bajar*/
+@keyframes move-up-down {
+  from {
+      transform: translateY(-10px);
+  }
+  to {
+      transform: translateY(10px);
+  }
+}
+/* ------------------------------- */
+
+/* responsividad del componente secundario CardDay.jsx */
+
+@media screen and (max-width: 1800px){
+  .font-number-day{
+    font-size: 25px;
+  }
+  .card-day-res{
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+
+  .card-day-res{
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 765px){
+  .font-number-day{
+    font-size: 25px;
+  }
+  .card-day-res{
+    height: 85px;
+    width: 85px;
+  }
+}
+  @media screen and (max-width: 480px){
+    .font-number-day{
+      font-size: 20px;
+    }
+    .card-day-res{
+      height: 70px;
+      width: 70px;
+    }
+
+}
+@media screen and (max-width: 415px){
+  .font-number-day{
+    font-size: 15px;
+  }
+  .card-day-res{
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 345px){
+  .font-number-day{
+    font-size: 15px;
+  }
+  .card-day-res{
+    height: 50px;
+    width: 50px;
+  }
+}
+/* -----------------------------------Final de los estilos del componente Homepage----------------------------------*/
+

@@ -1,0 +1,83 @@
+/* estilos de los modales de notas (editar y crear) */
+
+.note-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.note-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.note-input,
+.note-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #444;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.note-input:focus,
+.note-textarea:focus {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px  #007bff;
+  border: 1px solid#007bff;
+  outline: none !important;
+}
+
+.note-textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.note-error-message {
+  color: red;
+  margin-top: -10px;
+}
+
+/* -------------------------------------------------- */
+
+/* icono de crear nota */
+.note-icon {
+  transition: all 0.5s;
+}
+.note-icon:hover {
+ color:rgba(0, 119, 231, 0.616) !important;
+ transform: scale(1.2);
+}
+/* ------------------------ */
+
+/* responsividad del componente CardNote */
+.width-card{
+  width: 70% !important;
+}
+@media screen and (max-width: 800px){
+.width-card{
+  width: 90% !important;
+}
+}
+.fonts-notes{
+  font-family: 'Ysabeau Infant', sans-serif;
+  font-size: 18px;
+}
+
+.res-title-note{
+font-size: 35px !important;
+}
+
+@media screen and (max-width: 768px){
+.res-title-note{
+ font-size: 23px !important;
+}
+}
+/*  -------------------------------------- */
+

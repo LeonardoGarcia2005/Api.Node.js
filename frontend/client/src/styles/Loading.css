@@ -1,0 +1,40 @@
+/* responsividad del loading */
+@media screen and (max-width:1920px) {
+    .font-loading-title{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width:450px) {
+    .font-loading-title{
+        font-size: 60px;
+    }
+    .font-loading-subtitle{
+        font-size: 13px;
+    }
+}
+
+/* estilos del circulo de carga*/
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  animation: l14 4s infinite;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  border: 8px solid;
+  border-radius: 50%;
+  border-color: #ff00e2 #ff00e2 #0000 #0000;
+  mix-blend-mode: darken;
+  animation: l14 1s infinite linear;
+}
+.loader::after {
+  border-color: #0000 #0000 rgba(86,249,237,1) rgba(86,249,237,1);
+  animation-direction: reverse;
+}
+
+@keyframes l14{ 
+  100%{transform: rotate(1turn)}
+}

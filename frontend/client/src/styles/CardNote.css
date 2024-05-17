@@ -1,0 +1,24 @@
+/* responsividad del componente CardNote */
+  .width-card{
+    width: 70%;
+  }
+@media screen and (max-width: 800px){
+  .width-card{
+    width: 90%;
+  }
+}
+  .fonts-notes{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 18px;
+}
+
+.res-title-note{
+  font-size: 35px;
+ }
+
+@media screen and (max-width: 768px){
+  .res-title-note{
+   font-size: 23px;
+  }
+ }
+/*  -------------------------------------- */

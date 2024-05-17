@@ -1,0 +1,189 @@
+/* Estilos usados en los componentes Levels, LevIntro, Stories y Question */
+
+/* estilos de Levels */
+.card-level { 
+    box-shadow:  10px 10px 20px rgb(0, 0, 0); 
+    transition: ease-in-out 0.3s;
+  }
+
+.card-level:hover { 
+    color: #0e65e3  !important;
+    transform: translate(-2px, -5px);
+}
+
+.size-img-card{
+    width: 130px;
+    height: 130px;
+}
+.size-card-level{
+    width: 160px;
+    height: 160px !important;
+}
+/* ------------------------- */
+
+/* estilos de LevIntro */
+.letter-intro{
+  font-size: 19px !important;
+}
+
+@media screen and (max-width:600px){
+    .letter-intro{
+        font-size: 16px !important;
+    }
+}
+
+/* estilos de Sublevel */
+
+.card-sublevel { 
+    box-shadow:  10px 10px 20px rgb(0, 0, 0); 
+    transition: ease-in-out 0.3s;
+  }
+
+.card-sublevel:hover { 
+    filter: brightness(110%); 
+    transform: translateY(-4px);
+}
+
+.icon-cancel { 
+    transition: transform 0.3s;
+}
+  
+.icon-cancel:hover { 
+    transform: scale(1.1);
+   filter: brightness(95%);
+}
+
+.stories-card{
+    width: 800px; 
+    min-height: 560px;
+}
+
+.question-card{
+    width: 60%; 
+    min-height: 150px;
+}
+
+.btn-w{
+    width: 30%;
+}
+
+.res-img-stories{
+    height: 400px;
+    width: 550px;
+}
+
+.d-sides-pag{
+    display: flex !important;
+}
+.d-bottom-pag{
+    display: none !important;
+}
+/* --------------------------- */
+
+/* estilos de Question */
+
+.height-res{
+    height: 100vh;
+}
+
+/* inicio de responsividad del componente Levels, Stories y Question*/
+@media screen and (max-width: 900px){
+    .size-img-card{
+        width: 100px;
+        height: 100px;
+    }
+    .d-bottom-pag{
+        display: flex !important;
+    }
+    .d-sides-pag{
+        display: none !important;
+    }
+    .fonts-letter{
+        font-family: 'Ysabeau Infant', sans-serif;
+        font-size: 22px;
+    }
+    
+    .size-card-level{
+        width: 130px;
+        height: 130px !important;
+    }
+    .stories-card{
+        width: 550px; 
+    }
+    .question-card{
+        width: 90%; 
+        min-height: 140px;
+    }
+    .res-img-stories{
+        height: 350px;
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .height-res{
+        height: 100% !important;
+    }
+}
+
+
+@media screen and (max-width: 625px){
+    .stories-card{
+        width: 450px; 
+    }
+    .res-img-stories{
+        height: 300px;
+        width: 450px;
+    }
+    .height-res{
+        height: 100% !important;
+    }
+}
+
+@media screen and (max-width: 535px){
+    .stories-card{
+        width: 400px; 
+    }
+
+    .res-img-stories{
+        height: 250px;
+        width: 400px;
+    }
+    .height-res{
+        height: 100% !important;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .size-img-card{
+        width: 80px;
+        height: 80px;
+    }
+    .fonts-letter{
+        font-family: 'Ysabeau Infant', sans-serif;
+        font-size: 18px;
+    }
+    .size-card-level{
+        width: 110px;
+        height: 110px !important;
+    }
+    .stories-card{
+        width: 340px; 
+    }
+    .question-card{
+        width: 90%; 
+        height: 180px;
+    }
+    .res-img-stories{
+        height: 200px;
+        width: 350px;
+    }
+    .btn-w{
+    width: 40%;
+    }
+    .height-res{
+        height: 100% !important;
+    }
+}
+/* final de responsividad del componente Levels */

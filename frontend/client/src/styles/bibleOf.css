@@ -1,0 +1,77 @@
+
+/* estilos del componente CardChapter */
+.hover-card{
+    transition: all 0.3s;
+}
+.hover-card:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px #0e65e3;
+    color: #0e65e3;
+    transform: scale(1.1)
+}
+/* ------------------------------------ */
+
+/* estilos del componente OfficialBible */
+.display-select-bible{
+    display: none !important;
+ }
+ 
+.padding-res{
+    padding: 50px;
+  }
+
+.fonts-letter-bible{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 18px;
+}
+
+.res-card-chap-ver{
+   width: 90%;
+}
+/* -------------------------------------- */
+
+/* responsividad del componente OfficialBible */
+@media screen and (max-width: 1400px){
+    .res-card-chap-ver{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .res-card-chap-ver{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bible-tlf{
+        display: none !important;
+    }
+    .display-select-bible{
+        display: flex !important;
+    }
+    .padding-res{
+        padding: 10px 25px 25px 25px;
+      }
+       
+}
+/* -------------------------------------- */
+/* estilos del componente InicialBible.jsx */
+
+@media screen and (max-width: 1500px) {
+    .width-inicial-bi{
+        margin: 0 30px 0 30px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .width-inicial-bi{
+        margin: 0 25px 0 25px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .width-inicial-bi{
+        margin: 0 5px 0 5px;
+    }
+}
+
+/* ---------------------------

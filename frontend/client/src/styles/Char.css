@@ -1,0 +1,47 @@
+/* fondo de la imagen del modal */
+.Bg-img-modal {
+  background: linear-gradient(rgba(0, 165, 231, 1), #ff00e2);
+}
+
+/* titulo del modal */
+.title-char {
+  background: linear-gradient(45deg, rgba(0, 165, 231, 1), #ff00e2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+/* responsividad del componente Character */
+@media screen and (max-width: 1200px) {
+  .font-char {
+    font-size: 20px;
+  }
+}
+
+/* estilos del componente CharacterData */
+.text-justify{
+  text-align: justify;
+}
+.img-size-char {
+  height: 300px;
+  width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .size-font-data {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .size-font-data {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img-size-char {
+    height: 200px;
+    width: 200px;
+  }
+}

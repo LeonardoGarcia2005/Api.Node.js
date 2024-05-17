@@ -1,0 +1,89 @@
+.inicial-shadow-text{
+    text-shadow: 5px 5px 5px #000;
+}
+
+.bg-ipTwo{
+    height: 100vh !important;
+    background: linear-gradient(0deg, rgba(86,249,237,1) 0%, rgba(0,165,231,1) 25%, rgba(126,0,247,1) 50%, #ff00e2 100%)
+}
+
+.bg-ip{
+    background: rgb(255,0,226);
+    background: linear-gradient(0deg, #ff00e2 0%, rgba(126,0,247,1) 29%, rgba(0,165,231,1) 71%, rgba(86,249,237,1) 100%);
+    height: 100vh !important;
+  }
+
+.wid-intro{
+    width: 70%;
+}
+
+.font-intro-title{
+    font-size: 45px;
+}
+.size-img-ip{
+    height: 450px !important;
+    width: 450px !important;
+}
+
+.size-img-jesus{
+    height: 400px !important;
+    width: 400px !important;
+}
+
+@media screen and (max-width: 1200px){
+    .wid-intro{
+        width: 90% !important;
+    }
+    .font-intro-title{
+        font-size: 35px;
+        margin-top: -220px;
+    }
+}
+
+@media screen and (max-width: 525px){
+    .wid-intro{
+        width: 90% !important;
+    }
+    .font-intro-title{
+        font-size: 35px;
+        margin-top: -250px;
+    }
+
+    .font-intro{
+        font-size: 20px;
+    }
+
+    .size-img-ip{
+        height: 380px !important;
+        width: 380px !important;
+    }
+
+    .size-img-jesus{
+        height: 350px !important;
+        width: 350px !important;
+    }
+} 
+
+@media screen and (max-width: 420px){
+    .wid-intro{
+        width: 90% !important;
+    }
+    .font-intro-title{
+        font-size: 32px;
+        margin-top: -240px;
+    }
+
+    .font-intro{
+        font-size: 18px;
+    }
+
+    .size-img-ip{
+        height: 320px !important;
+        width: 320px !important;
+    }
+
+    .size-img-jesus{
+        height: 280px !important;
+        width: 280px !important;
+    }
+} 

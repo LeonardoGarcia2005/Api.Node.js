@@ -1,0 +1,179 @@
+/* NOTA: estos estilos estan siendo usados tanto el componente Login como el componente Signup */
+
+/* estilos del card del formulario: letra, ancho, animacion y sombras */
+.form_container {
+    font-family: sans-serif;
+    width: 32%; 
+    transition: all 0.3s ease-in-out; 
+    box-shadow: -10px -10px 20px #ff00e2, 0px 0px 20px rgba(0,165,231,1), 5px 5px 10px rgba(86,249,237,1); 
+    animation: move-up-down 2s ease-in-out infinite alternate; 
+}
+
+.res-label{
+    font-size: 14px;
+}
+
+.res-text{
+    font-size: 32px;
+}
+/* ---------------------------------------------------------- */
+
+/* inicio de responsividad del card del formulario */
+
+@media screen and (max-width: 1300px){
+    .form_container{
+        width: 38%;
+        transition: all 0.3s ease-in-out;
+        animation: move-up-down 2s ease-in-out infinite alternate;
+    }
+
+}
+
+@media screen and (max-width: 1050px){
+    .form_container{
+        width: 50%;
+        transition: all 0.3s ease-in-out;
+        animation: move-up-down 2s ease-in-out infinite alternate;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .form_container{
+        width: 65%;
+        transition: all 0.3s ease-in-out; 
+        animation: move-up-down 2s ease-in-out infinite alternate;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .form_container{
+        width: 90%;
+        transition: all 0.3s ease-in-out; 
+        animation: move-up-down 2s ease-in-out infinite alternate;
+    }
+    .res-text{
+        font-size: 29px;
+    }
+    .res-but{
+        display: none !important;
+    }
+
+    input::placeholder{
+        font-size: 13px !important;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .res-text{
+        font-size: 25px;
+    }
+}
+  
+.grid { 
+    display: grid; 
+    grid-template-columns: 3fr 1fr 3fr; /* dos partes iguales para la primera y la tercera columna, una parte para la segunda */
+    gap: 0.5rem; 
+    justify-content: center; 
+    align-items: center; }
+  
+  .grid-5 {
+    grid-column: span 5;
+  }
+  
+  .grid-2 {
+    grid-column: span 2;
+  }
+  
+/*final de responsividad del card del formulario */
+
+/* estilos del boton de google y facebook */
+.btn-custom{
+    box-shadow: 0px 0px 10px #0f0f0f !important;
+    transition: all 0.5s !important;
+}
+
+.btn-custom:hover{
+    box-shadow: 0px 0px 10px #0e65e3 !important;
+    color: #0e65e3 !important;
+    border: none !important;
+    transform: scale(1.1)
+}
+/* --------------------------------------- */
+
+/* estilos del input y titulo principal del formulario */
+input::placeholder{
+    color: #6c757d !important;
+}
+
+input{
+    color: #fff !important;
+    background-color: #212529;
+    border: 1px solid #6c757d !important;
+}
+
+.title-log{
+    background: linear-gradient(45deg,rgba(0,165,231,1),#ff00e2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+}
+/* ------------------------------------------------ */
+
+/* estilos del alert al no ingresar bien los datos */
+.alert-container{
+    background-color: rgb(255, 5, 5) !important;
+    border: 1px solid rgba(241, 6, 6, 0.81) !important;
+    box-shadow: 0px 0px 10px #ff0303 !important;
+    color: #fff !important;
+    /* Aumenta la duración de la animación a 4 segundos */
+    animation: fade-in-out 3s ease-in-out;
+}
+/*-------------------------------------------------*/
+
+/* ---------------------Inicio de animaciones--------------------- */
+
+/* animacion de movimiento del botón */
+@keyframes glowing {
+    /* El estado inicial del botón */
+    0% { background-position: 0 0; }
+    /* El estado final del botón */
+    100% { background-position: 400% 0;}
+}
+/* --------------------------------- */
+
+/* animacion del card para subir y bajar */
+@keyframes move-up-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+/* --------------------------------- */
+
+/* animacion del alert para aparecer y desaparecer fluidamente */
+
+@keyframes fade-in-out {
+    /* El alert empieza con opacidad 0 (invisible) */
+    0% {
+        opacity: 0;
+    }
+    /* El alert llega a opacidad 1 (visible) al 25% de la animación */
+    25% {
+        opacity: 1;
+    }
+    /* El alert mantiene la opacidad 1 hasta el 75% de la animación */
+    75% {
+        opacity: 1;
+    }
+    /* El alert vuelve a opacidad 0 (invisible) al final de la animación */
+    100% {
+        opacity: 0;
+    }
+}
+/* ------------------------------------------------------ */
+
+/* --------------------final de animaciones--------------------- */
+
